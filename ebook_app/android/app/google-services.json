@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "520705641010",
+    "project_id": "fir-auth-2c587",
+    "storage_bucket": "fir-auth-2c587.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520705641010:android:99bb3339b8aca675938a2b",
+        "android_client_info": {
+          "package_name": "com.example.ebook_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "520705641010-pd61b22q9jv1l8a5rmn1segk7h376rv4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXNpD4RPnWuyoopoEvQbzvpXJGK_mYK8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "520705641010-pd61b22q9jv1l8a5rmn1segk7h376rv4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
