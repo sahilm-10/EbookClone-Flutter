@@ -1,12 +1,10 @@
+import 'package:ebook_app/Screens/HomeScreens/featured.dart';
 import 'package:ebook_app/Screens/signinoptions/Signin.dart';
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:ebook_app/Screens/HomeScreens/Account.dart';
 import 'package:ebook_app/pages/home/home.dart';
-// import 'package:udemyclone/Screens/Homescreens/Featured.dart';
-// import 'package:udemyclone/Screens/Homescreens/MyCourses.dart';
-// import 'package:udemyclone/Screens/Homescreens/Search.dart';
-// import 'package:udemyclone/Screens/Homescreens/Wishlist.dart';
+import 'package:ebook_app/Screens/HomeScreens/featured.dart';
 
 class Homescreen extends StatefulWidget {
   @override
@@ -34,7 +32,7 @@ class _HomescreenState extends State<Homescreen> {
           });
         },
         controller: pageController,
-        children: [HomePage(),SignIn(), Account()],
+        children: [HomePage(),Featured(), Account()],
       ),
       bottomNavigationBar: BottomNavigationBar(
         onTap: onTap,

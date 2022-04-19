@@ -72,7 +72,7 @@ class _AccountState extends State<Account> {
                     child: MaterialButton(
                       onPressed: () {},
                       child: Text(
-                        'Become a instructor',
+                        'Read a Book',
                         style: TextStyle(
                             color: Colors.lightBlue,
                             fontWeight: FontWeight.bold),
@@ -121,12 +121,12 @@ class _AccountState extends State<Account> {
             ),
             ListTile(
               trailing: Icon(Icons.arrow_forward_ios, color: Colors.white),
-              title: Text('About Udemy',
+              title: Text('About PlayBooks',
                   style: TextStyle(color: Colors.white, fontSize: 20.0)),
             ),
             ListTile(
               trailing: Icon(Icons.arrow_forward_ios, color: Colors.white),
-              title: Text('About Udemy For Business',
+              title: Text('About PlayBooks',
                   style: TextStyle(color: Colors.white, fontSize: 20.0)),
             ),
             ListTile(
@@ -136,11 +136,11 @@ class _AccountState extends State<Account> {
             ),
             ListTile(
               trailing: Icon(Icons.arrow_forward_ios, color: Colors.white),
-              title: Text('Share The Udemy App',
+              title: Text('Share The PlayBooks App',
                   style: TextStyle(color: Colors.white, fontSize: 20.0)),
             ),
             Text(
-              'Diagnostics',
+              'Reader',
               style: TextStyle(color: Colors.grey, fontSize: 14.0),
             ),
             ListTile(
@@ -169,7 +169,7 @@ class _AccountState extends State<Account> {
               padding: const EdgeInsets.only(top: 50.0),
               child: Center(
                 child: Text(
-                  'Udemy  clone v1.0.0',
+                  'PlayBooks | 2022',
                   style: TextStyle(color: Colors.grey, fontSize: 14.0),
                 ),
               ),

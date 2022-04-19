@@ -1,0 +1,20 @@
+ListView.builder(
+		itemCount: 20,
+		itemBuilder: (BuildContext context,int index){
+		return ListTile(
+			leading: ConstrainedBox(
+  constraints: BoxConstraints(
+    minWidth: 44,
+    minHeight: 44,
+    maxWidth: 64,
+    maxHeight: 64,
+  ),
+  child: Image.asset('assests/book$index.jpeg', fit: BoxFit.cover),
+),
+			trailing: Text("Tap to Read",
+						style: TextStyle(
+							color: Colors.blue,fontSize: 15),),
+			title:Text("List item $index")
+			);
+		}
+		),

@@ -1,4 +1,4 @@
-
+import 'package:ebook_app/pages/home/details/detail.dart';
 import 'package:ebook_app/models/book.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +9,11 @@ final Book book;
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return GestureDetector(
+      onTap:() => Navigator.of(context).push(
+        MaterialPageRoute(builder:(context)=>DetailPage(book))
+      ),
+      child: Container(
       height: book.height as double,
       decoration: BoxDecoration(
         image : DecorationImage(
@@ -18,6 +22,7 @@ final Book book;
         )
       ),
      
+    )
     );
   }
 }

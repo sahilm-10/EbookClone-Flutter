@@ -1,5 +1,4 @@
 import 'package:ebook_app/Screens/HomeScreens/Account.dart';
-import 'package:ebook_app/Screens/HomeScreens/featured.dart';
 import 'package:ebook_app/constants/colors.dart';
 import 'package:ebook_app/pages/home/widgets/book_gridview.dart';
 import 'package:ebook_app/pages/home/widgets/custom_tab.dart';
@@ -7,16 +6,16 @@ import 'package:flutter/material.dart';
 
 
 
-class HomePage extends StatefulWidget {
-  const HomePage({ Key? key }) : super(key: key);
+class NewHome extends StatefulWidget {
+  const NewHome({ Key? key }) : super(key: key);
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<NewHome> createState() => _NewHome();
 }
 
-class _HomePageState extends State<HomePage> {
-  var tabIndex = 0;
-  var bottomIndex = 0;
+class _NewHome extends State<NewHome> {
+  var tabIndex = 1;
+  var bottomIndex = 1;
   final pageController = PageController();
   @override
   Widget build(BuildContext context) {
@@ -35,12 +34,9 @@ class _HomePageState extends State<HomePage> {
             tabIndex,
             pageController,
             (int index) => setState((){
-              tabIndex = 1;
+              tabIndex = index;
             }),
           ))
-
-          
-          
         ],
       ),
     bottomNavigationBar: _buildBottomNavigationBar(),
@@ -83,7 +79,7 @@ class _HomePageState extends State<HomePage> {
                 if(bottoms[index] == Icons.home_outlined){
                 Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) =>  HomePage()),
+              MaterialPageRoute(builder: (context) =>  NewHome()),
                 )
               }
               else if(bottoms[index] == Icons.shop_2_outlined){
@@ -91,14 +87,7 @@ class _HomePageState extends State<HomePage> {
               context,
               MaterialPageRoute(builder: (context) =>  Account()),
                 )
-              }
-              else if(bottoms[index] == Icons.library_add_check_outlined){
-                Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) =>  Featured()),
-                )
               },
-              
               },
               child: Icon(bottoms[index], 
               size: 30,
