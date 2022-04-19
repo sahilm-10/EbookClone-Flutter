@@ -1,6 +1,6 @@
-# ebook_app
-
-A new Flutter project.
+Ebook clone similar to Google PlayBooks
+To run the project , clone it in your local repository and run the main.dart file !
+#A new Flutter project.
 
 ## Getting Started
 
